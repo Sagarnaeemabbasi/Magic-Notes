@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Notes App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:1325px)" href="mobile.css">
+</head>
+
+<body>
+    <div id="container">
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <h3>Magic Notes</h3>
+                </li>
+                <li>Home</li>
+                <li> <input type="search" placeholder="Search" id="search"> </li>
+                <li> <button id="searchBtn">Search </button> </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="mainContainer">
+        <h1>Welcome To Magic Notes</h1>
+        <section id="mainSection">
+            <div class="box">
+                <h4>Add a Title</h4>
+                <textarea style="padding: 5px;margin: 10px;" name="TitleBox" id="addTitle"  cols="20" rows="2"></textarea>
+                <h3>Add a note</h3>
+                <textarea style="padding: 5px;" name="textBox" id="addText"  rows="5"></textarea>
+                <div>
+                    <button id="addBtn">Add Note</button>
+                </div>
+            </div> 
+        </section>
+        <hr>
+        <h1>Your Notes</h1>
+        <hr>
+        <div style="display: flex; flex-wrap: wrap;" id="notes">
+        </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+
+</html>
